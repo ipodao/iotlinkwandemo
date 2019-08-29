@@ -45,6 +45,7 @@ public class Test2 {
         param.put("RegionId", "cn-shanghai");
         param.put("Action", action);
         param.put("GwEui", "d896e0fff0106192");
+        param.put("DevEui","d896e00008000008");
 
         String signature = SignatureUtils.generate("GET", param, ACCESS_KEY_SECRET);
         System.out.println("最终signature：" + signature);
